@@ -102,8 +102,25 @@ h1{font-family:var(--display);font-size:clamp(2.4rem,5vw,4rem);font-weight:700;l
 .mq-track{display:flex;gap:2.5rem;animation:mq 30s linear infinite;width:max-content}
 .mq-track:hover{animation-play-state:paused}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.mq-item{white-space:nowrap;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-d);display:flex;align-items:center;gap:.75rem;font-weight:500}
-.mq-item::after{content:'✦';color:var(--violet);font-size:.55rem}
+.mq-item{
+    white-space: nowrap;
+    font-size: .7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #FFFFFF; /* Pure Bright White */
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-weight: 600;
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255,255,255,.35); /* Optional: আরও উজ্জ্বল দেখাবে */
+}
+
+.mq-item::after{
+    content: '✦';
+    color: #FFFFFF; /* চাইলে এটাও সাদা করুন */
+    font-size: .55rem;
+}
 
 /* SECTIONS */
 section{padding:5.5rem 5%}
